@@ -13,6 +13,7 @@
 		E74B9F451D7AE5C100CC0D29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E74B9F431D7AE5C100CC0D29 /* Main.storyboard */; };
 		E74B9F471D7AE5C100CC0D29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E74B9F461D7AE5C100CC0D29 /* Assets.xcassets */; };
 		E74B9F4A1D7AE5C100CC0D29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E74B9F481D7AE5C100CC0D29 /* LaunchScreen.storyboard */; };
+		E74B9F521D7B5BBB00CC0D29 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E74B9F511D7B5BBB00CC0D29 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E74B9F461D7AE5C100CC0D29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E74B9F491D7AE5C100CC0D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E74B9F4B1D7AE5C100CC0D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E74B9F511D7B5BBB00CC0D29 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = "ObjC-HelloWorld/Settings.bundle"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		E74B9F2E1D7AE5C100CC0D29 = {
 			isa = PBXGroup;
 			children = (
+				E74B9F511D7B5BBB00CC0D29 /* Settings.bundle */,
 				E74B9F391D7AE5C100CC0D29 /* ObjC-HelloWorld */,
 				E74B9F381D7AE5C100CC0D29 /* Products */,
 			);
@@ -136,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E74B9F521D7B5BBB00CC0D29 /* Settings.bundle in Resources */,
 				E74B9F4A1D7AE5C100CC0D29 /* LaunchScreen.storyboard in Resources */,
 				E74B9F471D7AE5C100CC0D29 /* Assets.xcassets in Resources */,
 				E74B9F451D7AE5C100CC0D29 /* Main.storyboard in Resources */,

@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+//- (CGFloat)circleArea:(CGFloat)theRadius;
 
 @end
 
