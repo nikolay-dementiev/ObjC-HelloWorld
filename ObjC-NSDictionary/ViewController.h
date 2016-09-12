@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+		UILabel *result;
+}
 
+@property (nonatomic, retain) IBOutlet UILabel *result;
+
+- (IBAction)setTo5;
+- (IBAction)reset;
 
 @end
+
 

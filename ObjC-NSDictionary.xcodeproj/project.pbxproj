@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E74BA09E1D81996A00CC0D29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BA09D1D81996A00CC0D29 /* main.m */; };
+		E74BA09E1D81996A00CC0D29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BA09D1D81996A00CC0D29 /* main.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E74BA0A11D81996A00CC0D29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BA0A01D81996A00CC0D29 /* AppDelegate.m */; };
 		E74BA0A41D81996A00CC0D29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BA0A31D81996A00CC0D29 /* ViewController.m */; };
 		E74BA0A71D81996A00CC0D29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E74BA0A51D81996A00CC0D29 /* Main.storyboard */; };
 		E74BA0A91D81996A00CC0D29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E74BA0A81D81996A00CC0D29 /* Assets.xcassets */; };
 		E74BA0AC1D81996A00CC0D29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E74BA0AA1D81996A00CC0D29 /* LaunchScreen.storyboard */; };
+		E74BA0B61D86975E00CC0D29 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BA0B51D86975E00CC0D29 /* MyClass.m */; };
+		E74BA0BA1D86A9CB00CC0D29 /* CategoryNSString.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BA0B91D86A9CB00CC0D29 /* CategoryNSString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		E74BA0A81D81996A00CC0D29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E74BA0AB1D81996A00CC0D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E74BA0AD1D81996A00CC0D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E74BA0B31D86951B00CC0D29 /* MyClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
+		E74BA0B51D86975E00CC0D29 /* MyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
+		E74BA0B81D86A97E00CC0D29 /* CategotyNSString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategotyNSString.h; sourceTree = "<group>"; };
+		E74BA0B91D86A9CB00CC0D29 /* CategoryNSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryNSString.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +64,10 @@
 		E74BA09B1D81996A00CC0D29 /* ObjC-NSDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				E74BA0B71D86A94D00CC0D29 /* Category */,
 				E74BA09F1D81996A00CC0D29 /* AppDelegate.h */,
 				E74BA0A01D81996A00CC0D29 /* AppDelegate.m */,
+				E74BA0B41D86971300CC0D29 /* MyClass */,
 				E74BA0A21D81996A00CC0D29 /* ViewController.h */,
 				E74BA0A31D81996A00CC0D29 /* ViewController.m */,
 				E74BA0A51D81996A00CC0D29 /* Main.storyboard */,
@@ -77,6 +85,24 @@
 				E74BA09D1D81996A00CC0D29 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E74BA0B41D86971300CC0D29 /* MyClass */ = {
+			isa = PBXGroup;
+			children = (
+				E74BA0B31D86951B00CC0D29 /* MyClass.h */,
+				E74BA0B51D86975E00CC0D29 /* MyClass.m */,
+			);
+			name = MyClass;
+			sourceTree = "<group>";
+		};
+		E74BA0B71D86A94D00CC0D29 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E74BA0B81D86A97E00CC0D29 /* CategotyNSString.h */,
+				E74BA0B91D86A9CB00CC0D29 /* CategoryNSString.m */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E74BA0B61D86975E00CC0D29 /* MyClass.m in Sources */,
 				E74BA0A41D81996A00CC0D29 /* ViewController.m in Sources */,
 				E74BA0A11D81996A00CC0D29 /* AppDelegate.m in Sources */,
 				E74BA09E1D81996A00CC0D29 /* main.m in Sources */,
+				E74BA0BA1D86A9CB00CC0D29 /* CategoryNSString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = "ObjC-NSDictionary/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "test.ObjC-NSDictionary";
@@ -276,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = "ObjC-NSDictionary/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "test.ObjC-NSDictionary";
